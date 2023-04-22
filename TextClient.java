@@ -47,11 +47,11 @@ class TextClient {
             if (isLoggedIn) {
                 outToServer.writeBytes("1 \n");
                 
-                //get response from server
-                response = null;
-                while (response == null || response.isEmpty()){
-                    response = inFromServer.readLine();
-                }
+                // //get response from server
+                // response = null;
+                // while (response == null || response.isEmpty()){
+                //     response = inFromServer.readLine();
+                // }
 
                 System.out.println("User list: " + response);
             } else {
